@@ -11,7 +11,9 @@
   </head>
   <body>
     <header>
-      <h1>South Canterbury Wild Life park</h1>
+      <div>
+        <h1>South Canterbury Wild Life park</h1>
+      </div>
     </header>
     <nav>
       <a class="active" href="home.html">home</a>
@@ -33,17 +35,23 @@
     body {
       display: grid;
       /* grid:
-        " h  h   h    " auto
-        " n  m   m     " auto
-        " .  f  f   " auto
-        / 1fr 4fr 4fr;
-      background-color: #6f7c5a; */
+         " h  h   h    " auto
+         " n  m   m     " auto
+         " .  f  f   " auto
+         / 1fr 4fr 4fr;
+       background-color: #6f7c5a; */
+      /* grid:
+         " h  n  n  " auto
+         " m  m  m  " auto
+         " f  f  f  " auto
+         / 2fr 3fr 4fr;
+       background-color: #05668d; */
       grid:
-        " h  n  n  " auto
-        " m  m  m  " auto
-        " f  f  f  " auto
+        " .  n  n  " auto
+        " .  m  m  " auto
+        " h  m  m  " auto
+        " .  f  f  " auto
         / 2fr 3fr 4fr;
-      background-color: #05668d;
     }
     header {
       grid-area: h;
@@ -59,121 +67,135 @@
     }
     h1 {
       /* font-family: "Monoton";
-      margin-top: 12px;
-      text-align: center;
-      color: aliceblue;
-      background-color: #455f58;
-      border-radius: 8px;
-      text-shadow: 3px 3px #532533; */
+       margin-top: 12px;
+       text-align: center;
+       color: aliceblue;
+       background-color: #455f58;
+       border-radius: 8px;
+       text-shadow: 3px 3px #532533; */
 
-      font-family: "Sigmar", cursive;
-      margin-top: 12px;
-      color: aliceblue;
-      border: 4px solid #a5d8ff;
-      border-radius: 12px;
-      padding-left: 5px;
-      padding-right: 5px;
-      width: 575px;
-      margin-right: 12px;
-      text-shadow: 3px 3px #c17c5d;
+      /* font-family: "Sigmar", cursive;
+       margin-top: 12px;
+       color: aliceblue;
+       border: 4px solid #a5d8ff;
+       border-radius: 12px;
+       padding-left: 5px;
+       padding-right: 5px;
+       width: 575px;
+       margin-right: 12px;
+       text-shadow: 3px 3px #c17c5d; */
+    }
+
+    div {
+      transform: rotate(270deg);
+      padding-left: 20px;
+      text-align: center;
+      display: inline-block;
+      height: 250px;
     }
     a {
       /* text-align: center;
-      background-color: #455f58;
-      font-family: "Roboto Condensed", sans-serif;
-      color: aliceblue;
-      text-decoration: none;
-      display: block;
-      font-size: larger;
-      border-radius: 7px;
-      padding-left: 8px;
-      padding-right: 8px;
-      padding-top: 2px;
-      padding-bottom: 2px;
-      margin-bottom: 5px;
-      margin-right: 20px;
-      margin-left: 10px;
-      margin-top: 2px; */
+       background-color: #455f58;
+       font-family: "Roboto Condensed", sans-serif;
+       color: aliceblue;
+       text-decoration: none;
+       display: block;
+       font-size: larger;
+       border-radius: 7px;
+       padding-left: 8px;
+       padding-right: 8px;
+       padding-top: 2px;
+       padding-bottom: 2px;
+       margin-bottom: 5px;
+       margin-right: 20px;
+       margin-left: 10px;
+       margin-top: 2px; */
 
-      margin-top: 15px;
-      text-align: center;
-      color: aliceblue;
-      text-decoration: none;
-      font-size: x-large;
-      display: inline-block;
-      margin-top: px;
-      margin-left: 12px;
-      border: 3px solid #a5d8ff;
-      border-radius: 4px;
-      padding-left: 5px;
-      padding-right: 5px;
-      font-family: "Montserrat", sans-serif;
+      /* margin-top: 15px;
+       text-align: center;
+       color: aliceblue;
+       text-decoration: none;
+       font-size: x-large;
+       display: inline-block;
+       margin-top: px;
+       margin-left: 12px;
+       border: 3px solid #a5d8ff;
+       border-radius: 4px;
+       padding-left: 5px;
+       padding-right: 5px;
+       font-family: "Montserrat", sans-serif; */
     }
     .active {
       /* text-align: center;
-      background-color: #455f58;
-      text-shadow: 1.5px 1.5px #532533;
-      font-family: "Roboto Condensed", sans-serif;
-      color: aliceblue;
-      text-decoration: underline;
-      display: block;
-      font-size: larger;
-      border-radius: 7px;
-      padding-left: 8px;
-      padding-right: 8px;
-      padding-top: 2px;
-      padding-bottom: 2px;
-      margin-bottom: 5px;
-      margin-right: 20px;
-      margin-left: 10px; */
-      text-align: center;
-      font-size: x-large;
-      display: inline-block;
-      margin-top: 12px;
-      margin: left 15px;
-      color: aliceblue;
-      text-decoration: underline;
-      border: 3px solid #a5d8ff;
-      border-radius: 4px;
-      padding-left: 5px;
-      padding-right: 5px;
-      margin-left: 3px;
-      font-family: "Montserrat", sans-serif;
+       background-color: #455f58;
+       text-shadow: 1.5px 1.5px #532533;
+       font-family: "Roboto Condensed", sans-serif;
+       color: aliceblue;
+       text-decoration: underline;
+       display: block;
+       font-size: larger;
+       border-radius: 7px;
+       padding-left: 8px;
+       padding-right: 8px;
+       padding-top: 2px;
+       padding-bottom: 2px;
+       margin-bottom: 5px;
+       margin-right: 20px;
+       margin-left: 10px; */
+
+      /* text-align: center;
+       font-size: x-large;
+       display: inline-block;
+       margin-top: 12px;
+       margin: left 15px;
+       color: aliceblue;
+       text-decoration: underline;
+       border: 3px solid #a5d8ff;
+       border-radius: 4px;
+       padding-left: 5px;
+       padding-right: 5px;
+       margin-left: 3px;
+       font-family: "Montserrat", sans-serif; */
     }
     h2 {
       /* font-family: "Roboto Condensed", sans-serif;
-      background-color: #455f58;
-      text-shadow: 2px 2px #532533;
-      color: aliceblue;
-      border-radius: 8px;
-      width: 22em;
-      margin-top: 2px;
-      padding-left: 12px;
-      padding-right: 12px; */
-      font-family: "Montserrat", sans-serif;
-      color: aliceblue;
+       background-color: #455f58;
+       text-shadow: 2px 2px #532533;
+       color: aliceblue;
+       border-radius: 8px;
+       width: 22em;
+       margin-top: 2px;
+       padding-left: 12px;
+       padding-right: 12px; */
+
+      /* font-family: "Montserrat", sans-serif;
+       color: aliceblue; */
     }
     p {
       /* font-family: "Exo 2", sans-serif;
-      background-color: #455f58;
-      border-radius: 8px;
-      margin-top: 2px;
-      padding-left: 12px;
-      padding-right: 12px;
-      color: aliceblue;
-      font-weight: bold; */
-      font-family: "Noto Sans", sans-serif;
-      color: aliceblue;
+       background-color: #455f58;
+       border-radius: 8px;
+       margin-top: 2px;
+       padding-left: 12px;
+       padding-right: 12px;
+       color: aliceblue;
+       font-weight: bold; */
+
+      /* font-family: "Noto Sans", sans-serif;
+       color: aliceblue; */
     }
     img {
       /* height: 200px;
-      margin-right: 3px;
-      border-radius: 5px;
-      border: 4px solid #455f58; */
+       margin-right: 3px;
+       border-radius: 5px;
+       border: 4px solid #455f58; */
+
+      /* height: 200px;
+       margin-right: 3px;
+       border-radius: 5px;
+       border: 4px solid #a5d8ff; */
       height: 200px;
       margin-right: 3px;
-      border-radius: 5px;
-      border: 4px solid #a5d8ff;
     }
   </style>
 </html>
