@@ -4,10 +4,131 @@
     <meta charset="UTF-8" />
   </head>
   <body>
-    <header></header>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
+    <header>
+      <h1>African Area</h1>
+    </header>
+    <nav>
+      <a href="home.html">home</a>
+      <a class="active" href="african.html"> African Area</a>
+      <a href="american.html"> American Area</a>
+      <a href="arctic.html"> Arctic Area</a>
+      <a href="Aboutus.html"> About us</a>
+    </nav>
+    <main>
+      <h2>Step into the African Savannah</h2>
+      <p>Experience the magic of Africa's diverse and captivating landscapes, right here in South Canterbury! Our African area is home to some of the continent's most iconic animals, including the majestic lion, the swift cheetah, and the towering giraffe. Stroll through our park and observe these magnificent creatures up close, while learning about their natural habitats, behaviors, and the conservation efforts in place to protect their future. Don't miss our daily animal encounters, feeding sessions, and interactive talks led by our passionate team of animal experts. Unleash your inner explorer and experience the African Savannah today!</p>
+      <h2>Meet the Stars of Our African Savannah</h2>
+      <h3>Lions:</h3>
+      <p>Introducing our pride of lions, led by our regal male, Leo, and his beautiful lioness companions, Nala and Zara. These magnificent big cats are known for their prowess, strength, and social nature. In our park, you'll have the chance to observe the complex dynamics of the lion pride as they interact, play, and rest together. Learn about their hunting techniques, their roles within the pride, and the conservation efforts in place to protect these incredible animals in the wild.</p>
+      <h3>Cheetahs:</h3>
+      <p>Meet our swift and graceful cheetah duo, Dash and Blaze. These elegant felines hold the title of the fastest land animals on Earth, capable of reaching speeds up to 60 miles per hour (97 km/h) in a matter of seconds. Watch them in action as they display their extraordinary agility and acceleration during our daily cheetah runs. Get to know more about their unique hunting strategies, their vulnerable status in the wild, and the initiatives aimed at safeguarding their population.</p>
+      <img src="cheetah-1-rodrigo-ardilha.jpg" alt="" /><img src="cheetah-2-christin-noelle.jpg" alt="" /><img src="cheetah-3-sammy-wong.jpg" alt="" />
+      <h3>Giraffes:</h3>
+      <p>Say hello to our gentle giants, Skyler, the tallest in our park, and Luna, a young and curious female. These awe-inspiring creatures are known for their elongated necks and distinctive spotted patterns, which provide camouflage in the wild. At our wildlife park, you can witness Skyler and Luna gracefully browsing on tree leaves and engaging in gentle interactions with each other. Learn about their unique physiology, social behaviors, and the ongoing conservation efforts to preserve their natural habitats.</p>
+    </main>
+    <footer><p>&copy; Emma Fitzgerald 2023</p></footer>
   </body>
-  <style></style>
+  <style>
+    body {
+      display: grid;
+      grid:
+        " .  n  n  " 0.6fr
+        " h  m  m  " 2fr
+        " .  f  f  " auto
+        / 2fr 3fr 4fr;
+      background-color: #6f7c5a;
+    }
+    header {
+      grid-area: h;
+    }
+    nav {
+      grid-area: n;
+    }
+    main {
+      grid-area: m;
+    }
+    footer {
+      grid-area: f;
+    }
+
+    h1 {
+      font-family: "Monoton";
+      margin-top: 12px;
+      text-align: center;
+      color: aliceblue;
+      background-color: #455f58;
+      border-radius: 8px;
+      text-shadow: 3px 3px #532533;
+      width: 300px;
+      border-style: dotted;
+      border-color: #532533;
+      transform: rotate(310deg);
+      text-align: center;
+      display: inline-block;
+      height: 160px;
+    }
+
+    a {
+      font-size: x-large;
+      text-align: center;
+      color: aliceblue;
+      font-family: "Roboto Condensed", sans-serif;
+      background-color: #455f58;
+      border-style: dotted;
+      border-color: #532533;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 7px;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+      margin-right: 20px;
+      margin-left: 10px;
+      margin-top: 12px;
+    }
+    .active {
+      font-size: x-large;
+      text-align: center;
+      color: aliceblue;
+      font-family: "Roboto Condensed", sans-serif;
+      background-color: #455f58;
+      text-decoration: underline;
+      display: inline-block;
+      border-radius: 7px;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+      margin-right: 20px;
+      margin-top: 12px;
+    }
+    h2 {
+      color: aliceblue;
+      font-family: "Roboto Condensed", sans-serif;
+      margin-left: 8px;
+      text-decoration: underline dotted #532533;
+    }
+    h3 {
+      color: aliceblue;
+      font-family: "Roboto Condensed", sans-serif;
+      margin-left: 8px;
+    }
+    p {
+      font-family: "Exo 2", sans-serif;
+      color: aliceblue;
+      margin-left: 8px;
+      margin-right: 18px;
+    }
+    img {
+      height: 200px;
+      margin-left: 8px;
+      margin-right: 3px;
+      border-style: dotted;
+      border-color: #532533;
+      border-radius: 5px;
+    }
+  </style>
 </html>
