@@ -2,12 +2,135 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Monoton&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <header></header>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
+    <header><h1>American Area</h1></header>
+    <nav>
+      <a href="home.html">home</a>
+      <a href="african.html"> African Area</a>
+      <a class="active" href="american.html"> American Area</a>
+      <a href="arctic.html"> Arctic Area</a>
+      <a href="Aboutus.html"> About us</a>
+    </nav>
+    <main>
+      <h2>Discover the American Wilderness</h2>
+      <p>Venture into the heart of the American wilderness and connect with the rugged beauty of North America's most captivating species. Our American area showcases the incredible bison, the mighty moose, and the industrious beaver each with their own unique charm and allure. Immerse yourself in the rich tapestry of the American landscape, as you learn about the vital roles these animals play in their ecosystems and the importance of conservation efforts in preserving their habitats. Join us for guided tours, educational talks, and special events that celebrate the diverse wildlife of the American continent.</p>
+      <h2>Meet the Stars of Our American Wilderness</h2>
+      <h3>Moose:</h3>
+      <p>Meet our majestic moose duo, Maple and Forest. These awe-inspiring animals are the largest members of the deer family and are known for their towering stature and impressive antlers. Watch as Maple and Forest roam our American area, foraging on aquatic vegetation and demonstrating their exceptional swimming abilities. Discover more about their unique adaptations, social structure, and the ongoing conservation programs aimed at protecting their habitats and populations.</p>
+      <img src="moose-2-zachery-perry.jpg" alt="moose on a hill" />
+      <h3>Bison:</h3>
+      <p>Introducing our robust bison herd, led by the mighty Thunder, and his companions, Storm and Breeze. These magnificent creatures, often referred to as buffalo, are symbols of the American West and once roamed the plains in vast numbers. Observe our bison as they graze on the grasslands, showcasing their strength and resilience. Learn about their historical significance, their role in the ecosystem, and the conservation efforts that have helped restore their populations in the wild.</p>
+      <h3>Beavers:</h3>
+      <p>Say hello to our industrious beaver family, Chip and Willow, along with their adorable kits. These remarkable rodents are known as nature's engineers, with their ability to build intricate dams and lodges that play a vital role in maintaining healthy wetland ecosystems. Observe our beavers at work as they construct and maintain their impressive structures, using their sharp teeth and powerful tails. Learn about their fascinating social behaviors, their importance in the ecosystem, and the conservation efforts in place to protect these incredible creatures.</p>
+      <img src="beaver-3-niklas-hamann.jpg" alt="beaver in water" />
+    </main>
+    <footer><p>&copy; Emma Fitzgerald 2023</p></footer>
   </body>
-  <style></style>
+  <style>
+    body {
+      display: grid;
+      grid:
+        " .  n  n  " 0.6fr
+        " h  m  m  " 2fr
+        " .  f  f  " auto
+        / 2fr 3fr 4fr;
+      background-color: #6f7c5a;
+    }
+    header {
+      grid-area: h;
+    }
+    nav {
+      grid-area: n;
+    }
+    main {
+      grid-area: m;
+    }
+    footer {
+      grid-area: f;
+    }
+
+    h1 {
+      font-family: "Monoton";
+      margin-top: 12px;
+      text-align: center;
+      color: aliceblue;
+      background-color: #455f58;
+      border-radius: 8px;
+      text-shadow: 3px 3px #532533;
+      width: 300px;
+      border-style: dotted;
+      border-color: #532533;
+      transform: rotate(310deg);
+      text-align: center;
+      display: inline-block;
+      height: 160px;
+    }
+
+    a {
+      font-size: x-large;
+      text-align: center;
+      color: aliceblue;
+      font-family: "Roboto Condensed", sans-serif;
+      background-color: #455f58;
+      border-style: dotted;
+      border-color: #532533;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 7px;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+      margin-right: 20px;
+      margin-left: 10px;
+      margin-top: 12px;
+    }
+    .active {
+      font-size: x-large;
+      text-align: center;
+      color: aliceblue;
+      font-family: "Roboto Condensed", sans-serif;
+      background-color: #455f58;
+      text-decoration: underline;
+      display: inline-block;
+      border-radius: 7px;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+      margin-right: 20px;
+      margin-top: 12px;
+    }
+    h2 {
+      color: aliceblue;
+      font-family: "Roboto Condensed", sans-serif;
+      margin-left: 8px;
+      text-decoration: underline dotted #532533;
+    }
+    h3 {
+      color: aliceblue;
+      font-family: "Roboto Condensed", sans-serif;
+      margin-left: 8px;
+    }
+    p {
+      font-family: "Exo 2", sans-serif;
+      color: aliceblue;
+      margin-left: 8px;
+      margin-right: 18px;
+    }
+    img {
+      height: 200px;
+      margin-left: 8px;
+      margin-right: 3px;
+      border-style: dotted;
+      border-color: #532533;
+      border-radius: 5px;
+    }
+  </style>
 </html>
