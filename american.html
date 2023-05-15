@@ -22,11 +22,13 @@
       <h3>Moose:</h3>
       <p>Meet our majestic moose duo, Maple and Forest. These awe-inspiring animals are the largest members of the deer family and are known for their towering stature and impressive antlers. Watch as Maple and Forest roam our American area, foraging on aquatic vegetation and demonstrating their exceptional swimming abilities. Discover more about their unique adaptations, social structure, and the ongoing conservation programs aimed at protecting their habitats and populations.</p>
       <img src="moose-2-zachery-perry.jpg" alt="moose on a hill" />
+      <p class="caption">Mapel photographed by Zachery Perry</p>
       <h3>Bison:</h3>
       <p>Introducing our robust bison herd, led by the mighty Thunder, and his companions, Storm and Breeze. These magnificent creatures, often referred to as buffalo, are symbols of the American West and once roamed the plains in vast numbers. Observe our bison as they graze on the grasslands, showcasing their strength and resilience. Learn about their historical significance, their role in the ecosystem, and the conservation efforts that have helped restore their populations in the wild.</p>
       <h3>Beavers:</h3>
       <p>Say hello to our industrious beaver family, Chip and Willow, along with their adorable kits. These remarkable rodents are known as nature's engineers, with their ability to build intricate dams and lodges that play a vital role in maintaining healthy wetland ecosystems. Observe our beavers at work as they construct and maintain their impressive structures, using their sharp teeth and powerful tails. Learn about their fascinating social behaviors, their importance in the ecosystem, and the conservation efforts in place to protect these incredible creatures.</p>
       <img src="beaver-3-niklas-hamann.jpg" alt="beaver in water" />
+      <p class="caption">chip phorographed by Niklas Hamann</p>
     </main>
     <footer><p>&copy; Emma Fitzgerald 2023</p></footer>
   </body>
@@ -34,7 +36,7 @@
     body {
       display: grid;
       grid:
-        " .  n  n  " 0.6fr
+        " .  n  n  " 65px
         " h  m  m  " 2fr
         " .  f  f  " auto
         / 2fr 3fr 4fr;
@@ -67,7 +69,8 @@
       transform: rotate(310deg);
       text-align: center;
       display: inline-block;
-      height: 160px;
+      padding-top: 12px;
+      padding-bottom: 12px;
     }
 
     a {
@@ -131,6 +134,9 @@
       border-style: dotted;
       border-color: #532533;
       border-radius: 5px;
+    }
+    .caption {
+      font-size: small;
     }
   </style>
 </html>
